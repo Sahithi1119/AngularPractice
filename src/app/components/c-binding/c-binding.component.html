@@ -1,0 +1,20 @@
+<p>c-binding works!</p>
+<h1 [class]="isactive?'active':'inactive'"> this is h1</h1> <button (click)="toggleActive()">toggle</button>
+
+<h2 [class]="{'pop':ispop ,'push':false}">this is h2</h2>
+<h3 [class]="{push:true}">this is h3</h3>
+
+<!--<p [class]="{active:'isactive',pop:'ispop'}">THIS is good</p> <button (click)="toggleActive()">toggleme!</button> -->
+
+
+<h1 [class]="isactive?'active':'inactive'">this is h1</h1> <!-- conditional statements-->
+
+<h1 [class.active]='isactive'>hii</h1> <!--binding using boolean property-->
+
+<h2 [ngClass]="['pop','push']"> hwru</h2> 
+<!--applying multiple classes as array-->
+
+<h3 [class]="['pop','push']">h3 tag</h3>
+
+
+<p [class]=" 'active  pop '"> beautiful</p> <!--string binding of multiple classes-->

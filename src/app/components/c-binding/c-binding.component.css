@@ -1,0 +1,17 @@
+.active
+{
+    background-color: blue;
+    color:aqua;
+}
+.inactive
+{
+    background-color: gray;
+}
+
+.pop{
+    color:purple;
+}
+
+.push{
+   background-color: green;
+}

@@ -1,0 +1,20 @@
+<p>e-binding works!</p>
+<button  (click)="test()">Click me</button>
+<br/>
+<button (dblclick)="test1()">Db Click me!</button>
+<br/><br/>
+<button (mouseover)="onmouseOver()">mouse over</button>
+<br/><br/>
+<button (mouseout)="onmouseOut()">mouseout</button>
+<br/><br/>
+<button (mousemove)="onmousemove()">mouse move</button>
+<button (mousedown)="onmousedown()">mouse down</button>
+<br/><br/>
+<input type="text" value="Key down" (keydown)="kdown()"><br/><br/>
+<input type="text" value="key up" (keyup)="kup()"><br/><br/>
+<input type="text" value="keypress" (keypress)="kpress()"><br/><br/>
+<input type="text"  value="focus" (focus)="onfocus()"><br/>
+<input type="text" value="focusin" (focusin)="onfocusin()"><br/>
+<input type="text"  value="focusout" (focusout)="onfocusout()"><br/><br/>
+<input type="text" value="blur" (blur)="onblur()"><br/><br/>
+<input type="text" value="input event" (input)="oninput()">

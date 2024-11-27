@@ -1,0 +1,14 @@
+.isactive{
+    background-color: blueviolet;
+    color:yellow;
+}
+.inactive
+{
+    font-style:oblique;
+}
+.colortext{
+    color: red;
+    font-size: 60px;
+    font-variant:small-caps;
+
+}

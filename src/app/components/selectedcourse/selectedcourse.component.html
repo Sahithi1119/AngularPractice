@@ -1,0 +1,10 @@
+
+<h2 style="color: blue;">our selcted course id is {{courseid}}</h2>
+
+
+<h2 *ngFor="let x of course" [style.color]="x.id == courseid?'orange':'black'">
+    {{x.id}} {{x.course}} {{x.fee}}
+</h2>
+
+
+

@@ -1,0 +1,14 @@
+<p>switch-directive works!</p>
+<div>
+    <button (click)="changeValue('one')">One</button>
+    <button (click)="changeValue('two')">Two</button>
+    <button (click)="changeValue('three')">Three</button>
+    <button (click)="changeValue('other')">other</button>
+  </div>
+  
+<div [ngSwitch]="selectvalue">
+    <div *ngSwitchCase="'one'">it is one</div>
+    <div *ngSwitchCase="'two'">it is two</div>
+    <div *ngSwitchCase="'three'">It is three</div>
+    <div *ngSwitchDefault>Default case</div>
+</div>

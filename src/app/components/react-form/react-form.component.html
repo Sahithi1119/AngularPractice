@@ -1,0 +1,58 @@
+<body>
+    <div class="mydiv">
+        <form [formGroup]="registrationForm">
+            <h1 style="text-align: center; font-weight: bold;"> Registration Form</h1>
+            <div >
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" formControlName="userName" placeholder="Enter user name">
+                <small class="text-danger" *ngIf="registrationForm.get('userName').touched && registrationForm.get('userName').hasError('required')" >Username required!</small>
+                <small class="text-danger" *ngIf="registrationForm.get('userName').touched && registrationForm.get('userName').hasError('minlength')" >Username must be minimum of 5 characters</small>
+                <!-- <small class="text-danger" *ngIf="registrationForm.controls['userName'].touched && registrationForm.controls['userName'].errors['minlength']">Username must be minimum of 5 characters</small> -->
+            </div>
+            <div >
+                <label for="exampleFormControlInput1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleFormControlInput1" formControlName="password" placeholder="Enter your password">
+            </div>
+            <div >
+                <label for="exampleFormControlInput1" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="exampleFormControlInput1" formControlName="cPassword" placeholder="Enter password">
+            </div>
+            <div>
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" formControlName="email" placeholder="Enter your email">
+                <small ></small>
+            </div>
+            <div class="mt-2">
+                <label>Gender</label><br/>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio"  id="male" value="male" name="gender">
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio"  id="female" value="female"  name="gender">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+            </div>
+            <div>
+                <label for="exampleFormControlInput1" class="form-label">City</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" formControlName="city" placeholder="Enter your city">
+            </div>
+            <div>
+                <label for="exampleFormControlInput1" class="form-label">State</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" formControlName="state" placeholder="Enter your state">
+            </div>
+            <div>
+                <label for="exampleFormControlInput1" class="form-label">Pincode</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" formControlName="pincode" placeholder="Enter your pincode">
+            </div>
+            <div class="col-12 mt-3">
+                <button type="submit" class="btn btn-primary" >Register</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="mt-5">
+        {{registrationForm.value|json}}
+
+    </div>
+</body>

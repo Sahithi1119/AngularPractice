@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CH17';
+
+  a = true;
+  test() {
+    var b = 20;
+    let c = 50;
+    this.a = false;
+  }
+
+  test1() {
+    this.test();
+  }
+
+
+
 }

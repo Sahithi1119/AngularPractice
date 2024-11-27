@@ -1,0 +1,7 @@
+
+<h1 style="color:blue"> Course Details</h1>
+<div   *ngFor="let x of courses"> 
+    <div (click)="selectCourse(x)">{{x.id}}-> {{x.course}}->{{x.fee}}</div>
+    <!-- <a href="javascript:void(0)" (click)="selectCourse(x)">{{x.id}} --  {{x.course}}->{{x.fee}}</a> -->
+</div>
+

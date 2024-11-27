@@ -1,0 +1,19 @@
+<p>if-directive works!</p>
+<h1 *ngIf="check">Coding....</h1>
+
+<h2 > Innvations</h2>
+
+<h1 *ngIf="test;else other">Coding HUB....</h1>
+<ng-template #other>
+    <p>This is else block</p>
+</ng-template>
+
+<span *ngIf="test;then iblock else eblock" ></span>
+<ng-template #iblock>
+    <p style="background-color: blueviolet; font-size: 60px;"> if block</p>
+    <p style="background-color: blueviolet; font-size: 60px;"> executing!...</p>
+</ng-template>
+<ng-template #eblock>
+    <p style="background-color: blue; font-size: 60px;"> else block</p>
+    <p style="background-color: blue; font-size: 60px;">executing!...</p>
+</ng-template>
